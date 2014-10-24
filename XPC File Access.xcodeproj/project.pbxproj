@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD1B73F819EEC90400423562 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1B73F719EEC90400423562 /* AppDelegate.m */; };
+		FD1B73FA19EEC90400423562 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1B73F919EEC90400423562 /* main.m */; };
+		FD1B73FC19EEC90400423562 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD1B73FB19EEC90400423562 /* Images.xcassets */; };
+		FD1B73FF19EEC90400423562 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD1B73FD19EEC90400423562 /* MainMenu.xib */; };
+		FDCAF25C19FA5736009D723F /* File_Access.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCAF25B19FA5736009D723F /* File_Access.m */; };
+		FDCAF25E19FA5737009D723F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCAF25D19FA5737009D723F /* main.m */; };
+		FDCAF26119FA5737009D723F /* File Access.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = FDCAF25519FA5736009D723F /* File Access.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDCAF25F19FA5737009D723F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD1B73E919EEC90300423562 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDCAF25419FA5736009D723F;
+			remoteInfo = "File Access";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FDCAF26519FA5737009D723F /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				FDCAF26119FA5737009D723F /* File Access.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FD1B73F119EEC90400423562 /* XPC File Access.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XPC File Access.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD1B73F519EEC90400423562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD1B73F619EEC90400423562 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FD1B73F719EEC90400423562 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FD1B73F919EEC90400423562 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD1B73FB19EEC90400423562 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FD1B73FE19EEC90400423562 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FD1B741419EEC9B300423562 /* Main App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Main App.entitlements"; sourceTree = "<group>"; };
+		FDCAF25519FA5736009D723F /* File Access.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = "File Access.xpc"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDCAF25819FA5736009D723F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDCAF25919FA5736009D723F /* File_AccessProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = File_AccessProtocol.h; sourceTree = "<group>"; };
+		FDCAF25A19FA5736009D723F /* File_Access.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = File_Access.h; sourceTree = "<group>"; };
+		FDCAF25B19FA5736009D723F /* File_Access.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = File_Access.m; sourceTree = "<group>"; };
+		FDCAF25D19FA5737009D723F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FDCAF26619FA5747009D723F /* File Access.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "File Access.entitlements"; sourceTree = "<group>"; };
+		FDCAF26719FA5CF7009D723F /* File_AccessResponderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = File_AccessResponderProtocol.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD1B73EE19EEC90400423562 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDCAF25219FA5736009D723F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD1B73E819EEC90300423562 = {
+			isa = PBXGroup;
+			children = (
+				FD1B73F319EEC90400423562 /* Source */,
+				FDCAF25619FA5736009D723F /* File Access */,
+				FD1B73F219EEC90400423562 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD1B73F219EEC90400423562 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD1B73F119EEC90400423562 /* XPC File Access.app */,
+				FDCAF25519FA5736009D723F /* File Access.xpc */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD1B73F319EEC90400423562 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				FD1B741419EEC9B300423562 /* Main App.entitlements */,
+				FD1B73F619EEC90400423562 /* AppDelegate.h */,
+				FD1B73F719EEC90400423562 /* AppDelegate.m */,
+				FD1B73FB19EEC90400423562 /* Images.xcassets */,
+				FD1B73FD19EEC90400423562 /* MainMenu.xib */,
+				FD1B73F419EEC90400423562 /* Supporting Files */,
+			);
+			name = Source;
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FD1B73F419EEC90400423562 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD1B73F519EEC90400423562 /* Info.plist */,
+				FD1B73F919EEC90400423562 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FDCAF25619FA5736009D723F /* File Access */ = {
+			isa = PBXGroup;
+			children = (
+				FDCAF26619FA5747009D723F /* File Access.entitlements */,
+				FDCAF25919FA5736009D723F /* File_AccessProtocol.h */,
+				FDCAF26719FA5CF7009D723F /* File_AccessResponderProtocol.h */,
+				FDCAF25A19FA5736009D723F /* File_Access.h */,
+				FDCAF25B19FA5736009D723F /* File_Access.m */,
+				FDCAF25D19FA5737009D723F /* main.m */,
+				FDCAF25719FA5736009D723F /* Supporting Files */,
+			);
+			path = "File Access";
+			sourceTree = "<group>";
+		};
+		FDCAF25719FA5736009D723F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDCAF25819FA5736009D723F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD1B73F019EEC90400423562 /* XPC File Access */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD1B740E19EEC90400423562 /* Build configuration list for PBXNativeTarget "XPC File Access" */;
+			buildPhases = (
+				FD1B73ED19EEC90400423562 /* Sources */,
+				FD1B73EE19EEC90400423562 /* Frameworks */,
+				FD1B73EF19EEC90400423562 /* Resources */,
+				FDCAF26519FA5737009D723F /* Embed XPC Services */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDCAF26019FA5737009D723F /* PBXTargetDependency */,
+			);
+			name = "XPC File Access";
+			productName = test;
+			productReference = FD1B73F119EEC90400423562 /* XPC File Access.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDCAF25419FA5736009D723F /* File Access */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDCAF26419FA5737009D723F /* Build configuration list for PBXNativeTarget "File Access" */;
+			buildPhases = (
+				FDCAF25119FA5736009D723F /* Sources */,
+				FDCAF25219FA5736009D723F /* Frameworks */,
+				FDCAF25319FA5736009D723F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "File Access";
+			productName = "File Access";
+			productReference = FDCAF25519FA5736009D723F /* File Access.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD1B73E919EEC90300423562 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Basil Shkara";
+				TargetAttributes = {
+					FD1B73F019EEC90400423562 = {
+						CreatedOnToolsVersion = 6.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					FDCAF25419FA5736009D723F = {
+						CreatedOnToolsVersion = 6.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = FD1B73EC19EEC90300423562 /* Build configuration list for PBXProject "XPC File Access" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD1B73E819EEC90300423562;
+			productRefGroup = FD1B73F219EEC90400423562 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD1B73F019EEC90400423562 /* XPC File Access */,
+				FDCAF25419FA5736009D723F /* File Access */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD1B73EF19EEC90400423562 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1B73FC19EEC90400423562 /* Images.xcassets in Resources */,
+				FD1B73FF19EEC90400423562 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDCAF25319FA5736009D723F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD1B73ED19EEC90400423562 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1B73FA19EEC90400423562 /* main.m in Sources */,
+				FD1B73F819EEC90400423562 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDCAF25119FA5736009D723F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDCAF25E19FA5737009D723F /* main.m in Sources */,
+				FDCAF25C19FA5736009D723F /* File_Access.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDCAF26019FA5737009D723F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDCAF25419FA5736009D723F /* File Access */;
+			targetProxy = FDCAF25F19FA5737009D723F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD1B73FD19EEC90400423562 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD1B73FE19EEC90400423562 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD1B740C19EEC90400423562 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FD1B740D19EEC90400423562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FD1B740F19EEC90400423562 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Main/Main App.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Main/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "XPC File Access";
+			};
+			name = Debug;
+		};
+		FD1B741019EEC90400423562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Main/Main App.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Main/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "XPC File Access";
+			};
+			name = Release;
+		};
+		FDCAF26219FA5737009D723F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "File Access/File Access.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "File Access/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FDCAF26319FA5737009D723F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "File Access/File Access.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "File Access/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD1B73EC19EEC90300423562 /* Build configuration list for PBXProject "XPC File Access" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1B740C19EEC90400423562 /* Debug */,
+				FD1B740D19EEC90400423562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD1B740E19EEC90400423562 /* Build configuration list for PBXNativeTarget "XPC File Access" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1B740F19EEC90400423562 /* Debug */,
+				FD1B741019EEC90400423562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDCAF26419FA5737009D723F /* Build configuration list for PBXNativeTarget "File Access" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDCAF26219FA5737009D723F /* Debug */,
+				FDCAF26319FA5737009D723F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD1B73E919EEC90300423562 /* Project object */;
+}
