@@ -18,28 +18,21 @@
 		BOOL stale = NO;
 		NSURL *URL = [NSURL URLByResolvingBookmarkData:newBookmarkData options:NSURLBookmarkResolutionWithoutUI relativeToURL:nil bookmarkDataIsStale:&stale error:&error];
 
-		BOOL success = [URL startAccessingSecurityScopedResource];
-
 		NSLog(@"%@ %@ %d", URL, error, stale);
 
-		NSLog(@"Able to access security scoped resource: %d", success);
+		NSFileManager *fileManager = [[NSFileManager alloc] init];
+		NSArray *commonProperties = @[ NSURLLocalizedNameKey, NSURLCreationDateKey, NSURLContentModificationDateKey ];
+		NSDirectoryEnumerator *enumerator = [fileManager enumeratorAtURL:URL includingPropertiesForKeys:commonProperties options:NSDirectoryEnumerationSkipsHiddenFiles errorHandler:nil];
+		[enumerator skipDescendants];
 
-		if (success) {
-			NSFileManager *fileManager = [[NSFileManager alloc] init];
-			NSArray *commonProperties = @[ NSURLLocalizedNameKey, NSURLCreationDateKey, NSURLContentModificationDateKey ];
-			NSDirectoryEnumerator *enumerator = [fileManager enumeratorAtURL:URL includingPropertiesForKeys:commonProperties options:NSDirectoryEnumerationSkipsHiddenFiles errorHandler:nil];
-			[enumerator skipDescendants];
-	
-			for (NSURL *fileURL in enumerator) {
-				NSString *fileName = nil;
-				[fileURL getResourceValue:&fileName forKey:NSURLNameKey error:NULL];
-	
-				NSLog(@"FILE CAN BE READ %@",fileName);
-			}
-			[URL stopAccessingSecurityScopedResource];
+		for (NSURL *fileURL in enumerator) {
+			NSString *fileName = nil;
+			[fileURL getResourceValue:&fileName forKey:NSURLNameKey error:NULL];
+
+			NSLog(@"FILE CAN BE READ %@",fileName);
 		}
-
-		// Finished
+		
+		// Inform the main process that we have finished access to the URL
 		reply();
 	}];
 }

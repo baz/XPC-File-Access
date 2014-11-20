@@ -59,6 +59,9 @@ static NSString *const kDataKey = @"Data";
 	NSURL *bookmarkURL = nil;
 	if (previousData) {
 		bookmarkURL = [NSURL URLByResolvingBookmarkData:previousData options:NSURLBookmarkResolutionWithSecurityScope relativeToURL:nil bookmarkDataIsStale:NULL error:nil];
+		
+		// Start accessing security scoped bookmark so the XPC process is able to have access to it
+		[bookmarkURL startAccessingSecurityScopedResource];
 
 		NSLog(@"Previously saved URL: %@",bookmarkURL);
 
@@ -66,7 +69,6 @@ static NSString *const kDataKey = @"Data";
 		// In order for the XPC process to use this URL, we need to create another bookmark from this URL which does not have the security scope applied
 		NSError *error = nil;
 		NSData *newBookmarkData = [bookmarkURL bookmarkDataWithOptions:NSURLBookmarkCreationMinimalBookmark includingResourceValuesForKeys:nil relativeToURL:nil error:&error];
-		[bookmarkURL stopAccessingSecurityScopedResource];
 
 		reply(newBookmarkData);
 	} else {
